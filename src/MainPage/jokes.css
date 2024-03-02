@@ -1,0 +1,113 @@
+body {
+  font-family: 'Fira Sans', sans-serif;
+  margin: auto;
+  margin-top: 128px;
+  align-items: center;
+  font-weight: 900;
+}
+.main {
+  display: flex;
+  flex-wrap: wrap;
+ 
+  width: 1596px;
+  @media (max-width: 768px) {
+    width: 100%; /* изменение ширины при ширине экрана 768px и больше */
+    
+  }
+}
+.container {
+  text-decoration: none;
+  display: grid;
+  place-items: center;
+}
+.input {
+  border: 1px solid #ccc;
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  width: 626px;
+  height: 64px;
+  margin-bottom: 30px;
+  padding: 4px;
+}
+.inputblock {
+  
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff;
+}
+.quoteblock {
+  @media (max-width: 1468px) {
+    width: 10%;
+    
+  }
+  box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.3);
+  width: 788px;
+  height: 262px;
+  text-decoration: none;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  display: flex;
+  position: relative;
+  align-items: start;
+  text-align: start;
+  font-size: 17px;
+  font-weight: 400;
+  line-height: 24px;
+  padding: 10px;
+  margin: 10px;
+  outline: none;
+}
+.large-card {
+  width: 70px;
+  height: 200px;
+  background-color: rgb(1, 7, 9);
+}
+.quoteblock:nth-child(-n + 2) {
+  outline: none;
+  text-decoration: none;
+  width: 788px;
+  height: 262px;
+  background-color: #ffffff;
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.quoteblock:not(:nth-child(-n + 2)) {
+  text-decoration: none;
+  width: 518px;
+  height: 150px;
+  background-color: #ffffff;
+  margin: 7px;
+  padding: auto;
+  justify-content: center;
+}
+
+.url{
+  opacity: 0.4;
+  outline: none;
+  text-decoration: none;
+  padding: 4px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.created{
+  opacity: 0.4;
+  padding: 4px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+input::placeholder {
+  font-family: 'Fira Sans', sans-serif;
+  color: #0619a9; 
+  font-size: large;
+  font-weight: 700;
+  padding-left: 5px; 
+}
+.founded{
+  margin-top: -15px;
+  font-family: 'Fira Sans', sans-serif;
+  margin-right: 27%;
+  font-weight: 400;
+}
